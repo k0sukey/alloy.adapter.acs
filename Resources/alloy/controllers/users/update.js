@@ -218,7 +218,7 @@ function Controller() {
     $.__views.__alloyId77.headerView = $.__views.__alloyId79;
     exports.destroy = function() {};
     _.extend($, $.__views);
-    var users = Alloy.createModel("Users");
+    var users = Alloy.createCollection("Users");
     users.me({
         success: function(model) {
             $.email.applyProperties({
