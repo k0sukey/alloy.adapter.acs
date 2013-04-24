@@ -23,6 +23,4 @@ $.execute.addEventListener('click', function(){
 			});
 		}
 	});
-
-
 });

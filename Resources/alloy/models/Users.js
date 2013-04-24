@@ -14,13 +14,25 @@ exports.definition = {
     },
     extendModel: function(Model) {
         _.extend(Model.prototype, {
+            authenticated: function() {
+                if (Ti.App.Properties.hasProperty("Cloud.sessionId")) {
+                    this.config.Cloud.sessionId = Ti.App.Properties.getString("Cloud.sessionId");
+                    return true;
+                }
+                return false;
+            },
             login: function(_params) {
                 var that = this;
                 this.config.Cloud.Users.login({
                     login: _params.login,
                     password: _params.password
                 }, function(e) {
-                    if (e.success) _params.success && _params.success(new model(e.users[0])); else {
+                    if (e.success) {
+                        if (_params.success) {
+                            Ti.App.Properties.setString("Cloud.sessionId", that.config.Cloud.sessionId);
+                            _params.success(new model(e.users[0]));
+                        }
+                    } else {
                         Ti.API.error(e);
                         _params.error && _params.error(that, e.error && e.message || e);
                     }
@@ -29,7 +41,12 @@ exports.definition = {
             logout: function(_params) {
                 var that = this;
                 this.config.Cloud.Users.logout(function(e) {
-                    if (e.success) _params.success && _params.success(null); else {
+                    if (e.success) {
+                        if (_params.success) {
+                            Ti.App.Properties.removeProperty("Cloud.sessionId");
+                            _params.success(null);
+                        }
+                    } else {
                         Ti.API.error(e);
                         _params.error && _params.error(that, e.error && e.message || e);
                     }

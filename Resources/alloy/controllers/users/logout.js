@@ -4,13 +4,57 @@ function Controller() {
     arguments[0] ? arguments[0]["$model"] : null;
     var $ = this;
     var exports = {};
-    $.__views.logout = Ti.UI.createView({
-        backgroundColor: "white",
-        id: "logout"
+    $.__views.container = Ti.UI.createView({
+        width: Ti.UI.SIZE,
+        height: Ti.UI.SIZE,
+        id: "container"
     });
-    $.__views.logout && $.addTopLevelView($.__views.logout);
+    $.__views.container && $.addTopLevelView($.__views.container);
+    $.__views.__alloyId71 = Ti.UI.createTableView({
+        backgroundColor: "#fff",
+        style: Ti.UI.iPhone.TableViewStyle.GROUPED,
+        id: "__alloyId71"
+    });
+    $.__views.container.add($.__views.__alloyId71);
+    $.__views.__alloyId73 = Ti.UI.createView({
+        width: Ti.UI.SIZE,
+        height: Ti.UI.SIZE,
+        id: "__alloyId73"
+    });
+    $.__views.execute = Ti.UI.createButton({
+        right: 10,
+        left: 10,
+        height: 44,
+        title: "logout",
+        id: "execute"
+    });
+    $.__views.__alloyId73.add($.__views.execute);
+    $.__views.__alloyId71.headerView = $.__views.__alloyId73;
     exports.destroy = function() {};
     _.extend($, $.__views);
+    $.execute.addEventListener("click", function() {
+        var message = Alloy.createWidget("be.k0suke.progresshud", "widget", {
+            message: "--- response ----------\n\nuser/logout execute"
+        });
+        $.container.add(message.getView());
+        message.on("click", function() {
+            $.container.remove(message.getView());
+        });
+        var users = Alloy.createModel("Users");
+        users.logout({
+            success: function() {
+                console.log("Auth: " + users.authenticated());
+                message.trigger("add", {
+                    message: "success"
+                });
+            },
+            error: function(model, response) {
+                message.trigger("add", {
+                    message: "error: " + response
+                });
+            }
+        });
+    });
     _.extend($, exports);
 }
 

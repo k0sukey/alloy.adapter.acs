@@ -118,7 +118,7 @@ function Controller() {
         right: 10,
         left: 10,
         height: 44,
-        title: "execute",
+        title: "login",
         id: "execute"
     });
     $.__views.__alloyId64.add($.__views.execute);
