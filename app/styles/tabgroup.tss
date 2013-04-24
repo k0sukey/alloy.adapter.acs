@@ -1,0 +1,8 @@
+'#container': {
+	bottom: 0,
+	height: 44,
+	backgroundColor: '#333',
+	contentWidth: 'auto',
+	contentHeight: 44,
+	layout: 'horizontal'
+}

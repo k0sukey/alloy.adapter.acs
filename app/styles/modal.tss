@@ -1,0 +1,55 @@
+'.container': {
+	backgroundColor: '#fff',
+	navBarHidden: true
+},
+'#header': {
+	top: 0,
+	height: 44,
+},
+'#title': {
+	color: '#333',
+	font: {
+		fontWeight: 'bold'
+	},
+	shadowColor: '#ddd',
+	shadowOffset: {
+		x: 0.0,
+		y: -1.0
+	}
+},
+'#close': {
+	left: 10,
+	width: Ti.UI.SZIE,
+	height: Ti.UI.SIZE,
+	color: '#333',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: 24
+	},
+	shadowColor: '#ddd',
+	shadowOffset: {
+		x: 0.0,
+		y: -1.0
+	}
+},
+'#title': {
+	width: Ti.UI.SZIE,
+	height: Ti.UI.SIZE,
+	color: '#333',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	shadowColor: '#ddd',
+	shadowOffset: {
+		x: 0.0,
+		y: -1.0
+	}
+},
+'#image': {
+	right: 10,
+	width: 26,
+	height: 26,
+},
+'#service': {
+	top: 44,
+	bottom: 44,
+	backgroundColor: '#fff',
+}

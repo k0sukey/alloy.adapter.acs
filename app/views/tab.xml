@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="container">
+		<Widget id="icon" icon="icon-cog" src="be.k0suke.fontawesome"/>
+		<Label id="title"/>
+	</View>
+</Alloy>

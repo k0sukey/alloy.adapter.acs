@@ -1,0 +1,36 @@
+'#container': {
+	width: 44,
+	height: 44
+},
+'#icon': {
+	top: 6,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#fff',
+	shadowColor: '#383838',
+	shadowOffset: {
+		x: 0.0,
+		y: 1.0
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: 20
+	},
+	touchEnabled: false
+},
+'#title': {
+	bottom: 2,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#fff',
+	shadowColor: '#333',
+	shadowOffset: {
+		x: 0.0,
+		y: 1.0
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: 10
+	},
+	touchEnabled: false
+}

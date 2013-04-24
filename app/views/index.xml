@@ -1,0 +1,93 @@
+<Alloy>
+	<Window class="container">
+		<View id="header">
+			<Label id="title">alloy.adapter.acs</Label>
+		</View>
+		<TableView id="table">
+			<TableViewRow id="acls">
+				<ImageView image="/images/acls.png"/>
+				<Label class="service">Access Control Lists</Label>
+			</TableViewRow>
+			<TableViewRow id="chats">
+				<ImageView image="/images/chats.png"/>
+				<Label class="service">Chats</Label>
+			</TableViewRow>
+			<TableViewRow id="checkins">
+				<ImageView image="/images/checkins.png"/>
+				<Label class="service">Checkins</Label>
+			</TableViewRow>
+			<TableViewRow id="clients">
+				<ImageView image="/images/clients.png"/>
+				<Label class="service">Clients</Label>
+			</TableViewRow>
+			<TableViewRow id="objects">
+				<ImageView image="/images/objects.png"/>
+				<Label class="service">Custom Objects</Label>
+			</TableViewRow>
+			<TableViewRow id="emails">
+				<ImageView image="/images/emails.png"/>
+				<Label class="service">Emails</Label>
+			</TableViewRow>
+			<TableViewRow id="events">
+				<ImageView image="/images/events.png"/>
+				<Label class="service">Events</Label>
+			</TableViewRow>
+			<TableViewRow id="files">
+				<ImageView image="/images/files.png"/>
+				<Label class="service">Files</Label>
+			</TableViewRow>
+			<TableViewRow id="friends">
+				<ImageView image="/images/friends.png"/>
+				<Label class="service">Friends</Label>
+			</TableViewRow>
+			<TableViewRow id="keyvalues">
+				<ImageView image="/images/keyvalues.png"/>
+				<Label class="service">Key Values</Label>
+			</TableViewRow>
+			<TableViewRow id="likes">
+				<ImageView image="/images/likes.png"/>
+				<Label class="service">Likes</Label>
+			</TableViewRow>
+			<TableViewRow id="messages">
+				<ImageView image="/images/messages.png"/>
+				<Label class="service">Messages</Label>
+			</TableViewRow>
+			<TableViewRow id="collections">
+				<ImageView image="/images/collections.png"/>
+				<Label class="service">Photo Collections</Label>
+			</TableViewRow>
+			<TableViewRow id="photos">
+				<ImageView image="/images/photos.png"/>
+				<Label class="service">Photos</Label>
+			</TableViewRow>
+			<TableViewRow id="places">
+				<ImageView image="/images/places.png"/>
+				<Label class="service">Places</Label>
+			</TableViewRow>
+			<TableViewRow id="posts">
+				<ImageView image="/images/posts.png"/>
+				<Label class="service">Posts</Label>
+			</TableViewRow>
+			<TableViewRow id="pushnotifications">
+				<ImageView image="/images/pushnotifications.png"/>
+				<Label class="service">Push Notifications</Label>
+			</TableViewRow>
+			<TableViewRow id="reviews">
+				<ImageView image="/images/reviews.png"/>
+				<Label class="service">Reviews</Label>
+			</TableViewRow>
+			<TableViewRow id="socialintegrations">
+				<ImageView image="/images/socialintegrations.png"/>
+				<Label class="service">Social Integrations</Label>
+			</TableViewRow>
+			<TableViewRow id="statuses">
+				<ImageView image="/images/statuses.png"/>
+				<Label class="service">Statuses</Label>
+			</TableViewRow>
+			<TableViewRow id="users">
+				<ImageView image="/images/users.png"/>
+				<Label class="service">Users</Label>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

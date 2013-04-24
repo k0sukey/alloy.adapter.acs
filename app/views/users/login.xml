@@ -1,0 +1,21 @@
+<Alloy>
+	<View id="container">
+		<TableView>
+			<HeaderView>
+				<View>
+					<Button id="execute">execute</Button>
+				</View>
+			</HeaderView>
+			<TableViewSection>
+				<TableViewRow>
+					<Label>email</Label>
+					<TextField id="login" hintText="or username"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>password</Label>
+					<TextField id="password"/>
+				</TableViewRow>
+			</TableViewSection>
+		</TableView>
+	</View>
+</Alloy>
