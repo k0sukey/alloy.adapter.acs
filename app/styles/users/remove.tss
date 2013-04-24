@@ -1,3 +1,13 @@
-".container": {
-	backgroundColor: "white"
+'TableView': {
+	backgroundColor: '#fff',
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED
+},
+'View': {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+'Button': {
+	right: 10,
+	left: 10,
+	height: 44
 }

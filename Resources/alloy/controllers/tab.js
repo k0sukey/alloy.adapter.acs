@@ -52,7 +52,7 @@ function Controller() {
     _.extend($, $.__views);
     var args = arguments[0] || {};
     $.title.applyProperties({
-        text: args.title
+        text: "remove" === args.title ? "delete" : args.title
     });
     $.container.addEventListener("click", function() {
         $.trigger("click", {

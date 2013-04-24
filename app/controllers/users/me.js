@@ -9,7 +9,7 @@ message.on('click', function(){
 
 var users = Alloy.createModel('Users');
 users.me({
-	success: function(model, response){
+	success: function(model){
 		message.trigger('add', {
 			message: 'success: ' + model.get('id')
 		});

@@ -1,4 +1,11 @@
 <Alloy>
-	<View class="container">
+	<View id="container">
+		<TableView>
+			<HeaderView>
+				<View>
+					<Button id="execute">delete</Button>
+				</View>
+			</HeaderView>
+		</TableView>
 	</View>
 </Alloy>
