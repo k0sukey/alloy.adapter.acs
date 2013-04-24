@@ -13,8 +13,8 @@ $.execute.addEventListener('click', function(){
 		username: $.username.getValue(),
 		password: $.password.getValue(),
 		password_confirmation: $.confirm.getValue(),
-		firstname: $.firstname.getValue(),
-		lastname: $.lastname.getValue()
+		first_name: $.firstname.getValue(),
+		last_name: $.lastname.getValue()
 	});
 	users.save({}, {
 		success: function(model, response){

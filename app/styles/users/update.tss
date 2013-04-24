@@ -1,3 +1,49 @@
-".container": {
-	backgroundColor: "white"
+'TableView': {
+	backgroundColor: '#fff',
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED
+},
+'View': {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+'Button': {
+	right: 10,
+	left: 10,
+	height: 44
+},
+'TableViewRow': {
+	height: 44,
+	backgroundColor: '#fcfcfc',
+	borderColor: '#eee',
+	selectionStyle: Ti.UI.iPhone.TableViewCellSelectionStyle.NONE,
+	touchEnabled: false,
+},
+'Label': {
+	left: 0,
+	width: 90,
+	color: '#333',
+	shadowColor: '#fff',
+	shadowOffset: {
+		x: 0.0,
+		y: 1.0
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	font: {
+		fontSize: 14,
+	},
+	touchEnabled: false
+},
+'TextField': {
+	left: 100,
+	width: 190,
+	color: '#262626',
+	shadowColor: '#fff',
+	shadowOffset: {
+		x: 0.0,
+		y: 1.0
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: 16
+	}
 }

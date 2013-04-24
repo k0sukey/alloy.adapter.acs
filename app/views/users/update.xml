@@ -1,4 +1,31 @@
 <Alloy>
-	<View class="container">
+	<View id="container">
+		<TableView>
+			<HeaderView>
+				<View>
+					<Button id="execute">update</Button>
+				</View>
+			</HeaderView>
+			<TableViewSection headerTitle="Required">
+				<TableViewRow>
+					<Label>email</Label>
+					<TextField id="email" hintText="or username"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>username</Label>
+					<TextField id="username" hintText="or email"/>
+				</TableViewRow>
+			</TableViewSection>
+			<TableViewSection headerTitle="Optional">
+				<TableViewRow>
+					<Label>firstname</Label>
+					<TextField id="firstname"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>lastname</Label>
+					<TextField id="lastname"/>
+				</TableViewRow>
+			</TableViewSection>
+		</TableView>
 	</View>
 </Alloy>
