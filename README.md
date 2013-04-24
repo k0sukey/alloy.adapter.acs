@@ -107,7 +107,7 @@ Using [ci.alloy.adapter.two](https://github.com/aaronksaunders/ci.alloy.adapter.
 | | login | OK |
 | | logout | OK |
 | | query | - |
-| | resend_confirmation | - |
+| | resend_confirmation | ti.cloud not yet support |
 | | request_reset_password | - |
 | | search | - |
 | | show | - |
