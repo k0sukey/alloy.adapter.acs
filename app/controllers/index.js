@@ -8,3 +8,10 @@ $.table.addEventListener('click', function(e){
 });
 
 $.index.open();
+
+var users = Alloy.createModel('Users');
+if (users.authenticated()) {
+	console.log('Authenticated');
+} else {
+	console.log('Unauthenticated');
+}

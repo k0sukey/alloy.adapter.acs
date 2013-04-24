@@ -531,6 +531,8 @@ function Controller() {
         });
     });
     $.index.open();
+    var users = Alloy.createModel("Users");
+    users.authenticated() ? console.log("Authenticated") : console.log("Unauthenticated");
     _.extend($, exports);
 }
 

@@ -64,7 +64,22 @@ exports.definition = {
                         }
                     }
                 });
+            },
+            me: function(_params){
+                var that = this;
 
+                this.config.Cloud.Users.showMe(function(e){
+                    if (e.success) {
+                        if (_params.success) {
+                            _params.success(new model(e.users[0]));
+                        }
+                    } else {
+                        Ti.API.error(e);
+                        if (_params.error) {
+                            _params.error(that, (e.error && e.message) || e);
+                        }
+                    }
+                });
             }
         });
         return Model;

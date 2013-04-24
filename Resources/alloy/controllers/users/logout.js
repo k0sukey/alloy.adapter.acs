@@ -43,7 +43,6 @@ function Controller() {
         var users = Alloy.createModel("Users");
         users.logout({
             success: function() {
-                console.log("Auth: " + users.authenticated());
                 message.trigger("add", {
                     message: "success"
                 });
