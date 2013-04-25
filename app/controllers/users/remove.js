@@ -17,8 +17,6 @@ $.execute.addEventListener('click', function(){
 
 			model.destroy({
 				success: function(model, response){
-					console.log(model);
-					console.log(response);
 					message.trigger('add', {
 						message: 'success'
 					});
