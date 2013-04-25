@@ -110,6 +110,6 @@ Using [ci.alloy.adapter.two](https://github.com/aaronksaunders/ci.alloy.adapter.
 | | resend_confirmation | ti.cloud not yet support | - | - |
 | | request_reset_password | - | - | - |
 | | search | - | - | - |
-| | show | - | - | - |
+| | show | [show.js](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/controllers/users/show.js) | [show.xml](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/views/users/show.xml) | [show.tss](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/styles/users/show.tss) |
 | | show/me | [me.js](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/controllers/users/me.js) | [me.xml](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/views/users/me.xml) | [me.tss](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/styles/users/me.tss) |
 | | update | [update.js](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/controllers/users/update.js) | [update.xml](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/views/users/update.xml) | [update.tss](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/styles/users/update.tss) |
