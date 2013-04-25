@@ -52,6 +52,17 @@ exports.definition = {
                     }
                 });
             },
+            show: function(_params) {
+                var that = this;
+                var data = {};
+                _params.user_id ? data.user_id = _params.user_id : data.user_ids = _params.user_ids;
+                this.config.Cloud.Users.show(data, function(e) {
+                    if (e.success) _params.success && _params.success(new model(e.users[0])); else {
+                        Ti.API.error(e);
+                        _params.error && _params.error(that, e.error && e.message || e);
+                    }
+                });
+            },
             me: function(_params) {
                 var that = this;
                 this.config.Cloud.Users.showMe(function(e) {

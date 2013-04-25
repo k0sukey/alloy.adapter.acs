@@ -1,4 +1,12 @@
 <Alloy>
-	<View class="container">
+	<View id="container">
+		<TableView>
+			<HeaderView>
+				<View>
+					<SearchBar id="search" hintText="user_id"/>
+					<Button id="execute">show</Button>
+				</View>
+			</HeaderView>
+		</TableView>
 	</View>
 </Alloy>
