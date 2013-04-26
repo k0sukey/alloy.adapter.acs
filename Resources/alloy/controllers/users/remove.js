@@ -47,9 +47,7 @@ function Controller() {
                     message: "user/showMe success"
                 });
                 model.destroy({
-                    success: function(model, response) {
-                        console.log(model);
-                        console.log(response);
+                    success: function() {
                         message.trigger("add", {
                             message: "success"
                         });

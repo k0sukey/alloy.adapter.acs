@@ -68,8 +68,7 @@ function Controller() {
             data: {
                 q: $.search.getValue()
             },
-            success: function(collection, response) {
-                console.log(response);
+            success: function(collection) {
                 message.trigger("add", {
                     message: "success: "
                 });
