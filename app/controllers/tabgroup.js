@@ -5,7 +5,7 @@ var services = {
 	chats: [],
 	checkins: [],
 	clients: [],
-	objects: [],
+	objects: [ 'create', 'remove', 'query', 'show', 'update' ],
 	emails: [],
 	events: [],
 	files: [],

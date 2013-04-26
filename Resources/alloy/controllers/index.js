@@ -532,6 +532,7 @@ function Controller() {
     });
     $.index.open();
     var users = Alloy.createModel("Users");
+    console.log(users.config);
     users.authenticated() ? console.log("Authenticated") : console.log("Unauthenticated");
     _.extend($, exports);
 }

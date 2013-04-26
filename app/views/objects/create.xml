@@ -1,0 +1,39 @@
+<Alloy>
+	<View id="container">
+		<TableView>
+			<HeaderView>
+				<View>
+					<Button id="execute">create</Button>
+				</View>
+			</HeaderView>
+			<TableViewSection headerTitle="Required">
+				<TableViewRow>
+					<Label>classname</Label>
+					<TextField id="classname"/>
+				</TableViewRow>
+			</TableViewSection>
+			<TableViewSection headerTitle="Fields">
+				<TableViewRow>
+					<Label>field 0</Label>
+					<TextField id="field0"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>field 1</Label>
+					<TextField id="field1"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>field 2</Label>
+					<TextField id="field2"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>field 3</Label>
+					<TextField id="field3"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>field 4</Label>
+					<TextField id="field4"/>
+				</TableViewRow>
+			</TableViewSection>
+		</TableView>
+	</View>
+</Alloy>

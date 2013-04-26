@@ -10,6 +10,7 @@ $.table.addEventListener('click', function(e){
 $.index.open();
 
 var users = Alloy.createModel('Users');
+console.log(users.config);
 if (users.authenticated()) {
 	console.log('Authenticated');
 } else {

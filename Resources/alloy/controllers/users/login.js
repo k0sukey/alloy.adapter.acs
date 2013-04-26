@@ -10,21 +10,21 @@ function Controller() {
         id: "container"
     });
     $.__views.container && $.addTopLevelView($.__views.container);
-    $.__views.__alloyId65 = Ti.UI.createTableViewSection({
-        id: "__alloyId65"
+    $.__views.__alloyId83 = Ti.UI.createTableViewSection({
+        id: "__alloyId83"
     });
-    var __alloyId66 = [];
-    __alloyId66.push($.__views.__alloyId65);
-    $.__views.__alloyId67 = Ti.UI.createTableViewRow({
+    var __alloyId84 = [];
+    __alloyId84.push($.__views.__alloyId83);
+    $.__views.__alloyId85 = Ti.UI.createTableViewRow({
         height: 44,
         backgroundColor: "#fcfcfc",
         borderColor: "#eee",
         selectionStyle: Ti.UI.iPhone.TableViewCellSelectionStyle.NONE,
         touchEnabled: false,
-        id: "__alloyId67"
+        id: "__alloyId85"
     });
-    $.__views.__alloyId65.add($.__views.__alloyId67);
-    $.__views.__alloyId68 = Ti.UI.createLabel({
+    $.__views.__alloyId83.add($.__views.__alloyId85);
+    $.__views.__alloyId86 = Ti.UI.createLabel({
         left: 0,
         width: 90,
         color: "#333",
@@ -39,9 +39,9 @@ function Controller() {
         },
         touchEnabled: false,
         text: "email",
-        id: "__alloyId68"
+        id: "__alloyId86"
     });
-    $.__views.__alloyId67.add($.__views.__alloyId68);
+    $.__views.__alloyId85.add($.__views.__alloyId86);
     $.__views.login = Ti.UI.createTextField({
         left: 100,
         width: 190,
@@ -58,17 +58,17 @@ function Controller() {
         id: "login",
         hintText: "or username"
     });
-    $.__views.__alloyId67.add($.__views.login);
-    $.__views.__alloyId69 = Ti.UI.createTableViewRow({
+    $.__views.__alloyId85.add($.__views.login);
+    $.__views.__alloyId87 = Ti.UI.createTableViewRow({
         height: 44,
         backgroundColor: "#fcfcfc",
         borderColor: "#eee",
         selectionStyle: Ti.UI.iPhone.TableViewCellSelectionStyle.NONE,
         touchEnabled: false,
-        id: "__alloyId69"
+        id: "__alloyId87"
     });
-    $.__views.__alloyId65.add($.__views.__alloyId69);
-    $.__views.__alloyId70 = Ti.UI.createLabel({
+    $.__views.__alloyId83.add($.__views.__alloyId87);
+    $.__views.__alloyId88 = Ti.UI.createLabel({
         left: 0,
         width: 90,
         color: "#333",
@@ -83,9 +83,9 @@ function Controller() {
         },
         touchEnabled: false,
         text: "password",
-        id: "__alloyId70"
+        id: "__alloyId88"
     });
-    $.__views.__alloyId69.add($.__views.__alloyId70);
+    $.__views.__alloyId87.add($.__views.__alloyId88);
     $.__views.password = Ti.UI.createTextField({
         left: 100,
         width: 190,
@@ -101,18 +101,18 @@ function Controller() {
         },
         id: "password"
     });
-    $.__views.__alloyId69.add($.__views.password);
-    $.__views.__alloyId62 = Ti.UI.createTableView({
+    $.__views.__alloyId87.add($.__views.password);
+    $.__views.__alloyId80 = Ti.UI.createTableView({
         backgroundColor: "#fff",
         style: Ti.UI.iPhone.TableViewStyle.GROUPED,
-        data: __alloyId66,
-        id: "__alloyId62"
+        data: __alloyId84,
+        id: "__alloyId80"
     });
-    $.__views.container.add($.__views.__alloyId62);
-    $.__views.__alloyId64 = Ti.UI.createView({
+    $.__views.container.add($.__views.__alloyId80);
+    $.__views.__alloyId82 = Ti.UI.createView({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
-        id: "__alloyId64"
+        id: "__alloyId82"
     });
     $.__views.execute = Ti.UI.createButton({
         right: 10,
@@ -121,8 +121,8 @@ function Controller() {
         title: "login",
         id: "execute"
     });
-    $.__views.__alloyId64.add($.__views.execute);
-    $.__views.__alloyId62.headerView = $.__views.__alloyId64;
+    $.__views.__alloyId82.add($.__views.execute);
+    $.__views.__alloyId80.headerView = $.__views.__alloyId82;
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.execute.addEventListener("click", function() {
