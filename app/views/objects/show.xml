@@ -1,0 +1,18 @@
+<Alloy>
+	<View id="container">
+		<TableView>
+			<HeaderView>
+				<View>
+					<SearchBar id="search" hintText="id"/>
+					<Button id="execute">show</Button>
+				</View>
+			</HeaderView>
+			<TableViewSection headerTitle="Required">
+				<TableViewRow>
+					<Label>classname</Label>
+					<TextField id="classname"/>
+				</TableViewRow>
+			</TableViewSection>
+		</TableView>
+	</View>
+</Alloy>
