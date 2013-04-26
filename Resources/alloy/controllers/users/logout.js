@@ -10,16 +10,16 @@ function Controller() {
         id: "container"
     });
     $.__views.container && $.addTopLevelView($.__views.container);
-    $.__views.__alloyId96 = Ti.UI.createTableView({
+    $.__views.__alloyId103 = Ti.UI.createTableView({
         backgroundColor: "#fff",
         style: Ti.UI.iPhone.TableViewStyle.GROUPED,
-        id: "__alloyId96"
+        id: "__alloyId103"
     });
-    $.__views.container.add($.__views.__alloyId96);
-    $.__views.__alloyId98 = Ti.UI.createView({
+    $.__views.container.add($.__views.__alloyId103);
+    $.__views.__alloyId105 = Ti.UI.createView({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
-        id: "__alloyId98"
+        id: "__alloyId105"
     });
     $.__views.execute = Ti.UI.createButton({
         right: 10,
@@ -28,8 +28,8 @@ function Controller() {
         title: "logout",
         id: "execute"
     });
-    $.__views.__alloyId98.add($.__views.execute);
-    $.__views.__alloyId96.headerView = $.__views.__alloyId98;
+    $.__views.__alloyId105.add($.__views.execute);
+    $.__views.__alloyId103.headerView = $.__views.__alloyId105;
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.execute.addEventListener("click", function() {

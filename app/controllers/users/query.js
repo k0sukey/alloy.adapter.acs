@@ -1,5 +1,5 @@
 var message = Alloy.createWidget('be.k0suke.progresshud', 'widget', {
-	message: '--- response ----------\n\nuser/show execute'
+	message: '--- response ----------\n\nuser/query execute'
 });
 $.container.add(message.getView());
 

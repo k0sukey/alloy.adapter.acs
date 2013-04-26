@@ -10,23 +10,23 @@ function Controller() {
         id: "container"
     });
     $.__views.container && $.addTopLevelView($.__views.container);
-    $.__views.__alloyId105 = Ti.UI.createTableView({
+    $.__views.__alloyId112 = Ti.UI.createTableView({
         backgroundColor: "#fff",
         style: Ti.UI.iPhone.TableViewStyle.GROUPED,
-        id: "__alloyId105"
+        id: "__alloyId112"
     });
-    $.__views.container.add($.__views.__alloyId105);
-    $.__views.__alloyId107 = Ti.UI.createView({
+    $.__views.container.add($.__views.__alloyId112);
+    $.__views.__alloyId114 = Ti.UI.createView({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
-        id: "__alloyId107"
+        id: "__alloyId114"
     });
     $.__views.search = Ti.UI.createSearchBar({
         top: 0,
         id: "search",
         hintText: "user_id"
     });
-    $.__views.__alloyId107.add($.__views.search);
+    $.__views.__alloyId114.add($.__views.search);
     $.__views.execute = Ti.UI.createButton({
         top: 54,
         right: 10,
@@ -35,8 +35,8 @@ function Controller() {
         title: "show",
         id: "execute"
     });
-    $.__views.__alloyId107.add($.__views.execute);
-    $.__views.__alloyId105.headerView = $.__views.__alloyId107;
+    $.__views.__alloyId114.add($.__views.execute);
+    $.__views.__alloyId112.headerView = $.__views.__alloyId114;
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.search.addEventListener("focus", function() {

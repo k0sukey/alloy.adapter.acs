@@ -1,0 +1,17 @@
+<Alloy>
+	<View id="container">
+		<TableView>
+			<HeaderView>
+				<View>
+					<Button id="execute">query</Button>
+				</View>
+			</HeaderView>
+			<TableViewSection headerTitle="Required">
+				<TableViewRow>
+					<Label>classname</Label>
+					<TextField id="classname"/>
+				</TableViewRow>
+			</TableViewSection>
+		</TableView>
+	</View>
+</Alloy>
