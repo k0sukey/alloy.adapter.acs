@@ -8,6 +8,7 @@ function guid() {
 
 function InitAdapter(config) {
     Cloud = require("ti.cloud"), Cloud.debug = !0, config.Cloud = Cloud;
+    console.log(Cloud);
 }
 
 function Sync(method, model, opts) {

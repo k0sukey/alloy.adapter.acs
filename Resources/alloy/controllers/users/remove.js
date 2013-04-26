@@ -10,16 +10,16 @@ function Controller() {
         id: "container"
     });
     $.__views.container && $.addTopLevelView($.__views.container);
-    $.__views.__alloyId106 = Ti.UI.createTableView({
+    $.__views.__alloyId128 = Ti.UI.createTableView({
         backgroundColor: "#fff",
         style: Ti.UI.iPhone.TableViewStyle.GROUPED,
-        id: "__alloyId106"
+        id: "__alloyId128"
     });
-    $.__views.container.add($.__views.__alloyId106);
-    $.__views.__alloyId108 = Ti.UI.createView({
+    $.__views.container.add($.__views.__alloyId128);
+    $.__views.__alloyId130 = Ti.UI.createView({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
-        id: "__alloyId108"
+        id: "__alloyId130"
     });
     $.__views.execute = Ti.UI.createButton({
         right: 10,
@@ -28,8 +28,8 @@ function Controller() {
         title: "delete",
         id: "execute"
     });
-    $.__views.__alloyId108.add($.__views.execute);
-    $.__views.__alloyId106.headerView = $.__views.__alloyId108;
+    $.__views.__alloyId130.add($.__views.execute);
+    $.__views.__alloyId128.headerView = $.__views.__alloyId130;
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.execute.addEventListener("click", function() {

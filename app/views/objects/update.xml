@@ -1,0 +1,48 @@
+<Alloy>
+	<View id="container">
+		<TableView>
+			<HeaderView>
+				<View>
+					<Button id="show">show</Button>
+				</View>
+			</HeaderView>
+			<FooterView>
+				<View>
+					<Button id="execute">update</Button>
+				</View>
+			</FooterView>
+			<TableViewSection headerTitle="1. Objects/show">
+				<TableViewRow>
+					<Label>classname</Label>
+					<TextField id="classname"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>id</Label>
+					<TextField id="search"/>
+				</TableViewRow>
+			</TableViewSection>
+			<TableViewSection headerTitle="2. Objects/update">
+				<TableViewRow>
+					<Label>field 0</Label>
+					<TextField id="field0"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>field 1</Label>
+					<TextField id="field1"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>field 2</Label>
+					<TextField id="field2"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>field 3</Label>
+					<TextField id="field3"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label>field 4</Label>
+					<TextField id="field4"/>
+				</TableViewRow>
+			</TableViewSection>
+		</TableView>
+	</View>
+</Alloy>

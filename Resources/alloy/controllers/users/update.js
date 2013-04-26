@@ -10,22 +10,22 @@ function Controller() {
         id: "container"
     });
     $.__views.container && $.addTopLevelView($.__views.container);
-    $.__views.__alloyId118 = Ti.UI.createTableViewSection({
+    $.__views.__alloyId140 = Ti.UI.createTableViewSection({
         headerTitle: "Required",
-        id: "__alloyId118"
+        id: "__alloyId140"
     });
-    var __alloyId119 = [];
-    __alloyId119.push($.__views.__alloyId118);
-    $.__views.__alloyId120 = Ti.UI.createTableViewRow({
+    var __alloyId141 = [];
+    __alloyId141.push($.__views.__alloyId140);
+    $.__views.__alloyId142 = Ti.UI.createTableViewRow({
         height: 44,
         backgroundColor: "#fcfcfc",
         borderColor: "#eee",
         selectionStyle: Ti.UI.iPhone.TableViewCellSelectionStyle.NONE,
         touchEnabled: false,
-        id: "__alloyId120"
+        id: "__alloyId142"
     });
-    $.__views.__alloyId118.add($.__views.__alloyId120);
-    $.__views.__alloyId121 = Ti.UI.createLabel({
+    $.__views.__alloyId140.add($.__views.__alloyId142);
+    $.__views.__alloyId143 = Ti.UI.createLabel({
         left: 0,
         width: 90,
         color: "#333",
@@ -40,9 +40,9 @@ function Controller() {
         },
         touchEnabled: false,
         text: "email",
-        id: "__alloyId121"
+        id: "__alloyId143"
     });
-    $.__views.__alloyId120.add($.__views.__alloyId121);
+    $.__views.__alloyId142.add($.__views.__alloyId143);
     $.__views.email = Ti.UI.createTextField({
         left: 100,
         width: 190,
@@ -59,17 +59,17 @@ function Controller() {
         id: "email",
         hintText: "or username"
     });
-    $.__views.__alloyId120.add($.__views.email);
-    $.__views.__alloyId122 = Ti.UI.createTableViewRow({
+    $.__views.__alloyId142.add($.__views.email);
+    $.__views.__alloyId144 = Ti.UI.createTableViewRow({
         height: 44,
         backgroundColor: "#fcfcfc",
         borderColor: "#eee",
         selectionStyle: Ti.UI.iPhone.TableViewCellSelectionStyle.NONE,
         touchEnabled: false,
-        id: "__alloyId122"
+        id: "__alloyId144"
     });
-    $.__views.__alloyId118.add($.__views.__alloyId122);
-    $.__views.__alloyId123 = Ti.UI.createLabel({
+    $.__views.__alloyId140.add($.__views.__alloyId144);
+    $.__views.__alloyId145 = Ti.UI.createLabel({
         left: 0,
         width: 90,
         color: "#333",
@@ -84,9 +84,9 @@ function Controller() {
         },
         touchEnabled: false,
         text: "username",
-        id: "__alloyId123"
+        id: "__alloyId145"
     });
-    $.__views.__alloyId122.add($.__views.__alloyId123);
+    $.__views.__alloyId144.add($.__views.__alloyId145);
     $.__views.username = Ti.UI.createTextField({
         left: 100,
         width: 190,
@@ -103,22 +103,22 @@ function Controller() {
         id: "username",
         hintText: "or email"
     });
-    $.__views.__alloyId122.add($.__views.username);
-    $.__views.__alloyId124 = Ti.UI.createTableViewSection({
+    $.__views.__alloyId144.add($.__views.username);
+    $.__views.__alloyId146 = Ti.UI.createTableViewSection({
         headerTitle: "Optional",
-        id: "__alloyId124"
+        id: "__alloyId146"
     });
-    __alloyId119.push($.__views.__alloyId124);
-    $.__views.__alloyId125 = Ti.UI.createTableViewRow({
+    __alloyId141.push($.__views.__alloyId146);
+    $.__views.__alloyId147 = Ti.UI.createTableViewRow({
         height: 44,
         backgroundColor: "#fcfcfc",
         borderColor: "#eee",
         selectionStyle: Ti.UI.iPhone.TableViewCellSelectionStyle.NONE,
         touchEnabled: false,
-        id: "__alloyId125"
+        id: "__alloyId147"
     });
-    $.__views.__alloyId124.add($.__views.__alloyId125);
-    $.__views.__alloyId126 = Ti.UI.createLabel({
+    $.__views.__alloyId146.add($.__views.__alloyId147);
+    $.__views.__alloyId148 = Ti.UI.createLabel({
         left: 0,
         width: 90,
         color: "#333",
@@ -133,9 +133,9 @@ function Controller() {
         },
         touchEnabled: false,
         text: "firstname",
-        id: "__alloyId126"
+        id: "__alloyId148"
     });
-    $.__views.__alloyId125.add($.__views.__alloyId126);
+    $.__views.__alloyId147.add($.__views.__alloyId148);
     $.__views.firstname = Ti.UI.createTextField({
         left: 100,
         width: 190,
@@ -151,17 +151,17 @@ function Controller() {
         },
         id: "firstname"
     });
-    $.__views.__alloyId125.add($.__views.firstname);
-    $.__views.__alloyId127 = Ti.UI.createTableViewRow({
+    $.__views.__alloyId147.add($.__views.firstname);
+    $.__views.__alloyId149 = Ti.UI.createTableViewRow({
         height: 44,
         backgroundColor: "#fcfcfc",
         borderColor: "#eee",
         selectionStyle: Ti.UI.iPhone.TableViewCellSelectionStyle.NONE,
         touchEnabled: false,
-        id: "__alloyId127"
+        id: "__alloyId149"
     });
-    $.__views.__alloyId124.add($.__views.__alloyId127);
-    $.__views.__alloyId128 = Ti.UI.createLabel({
+    $.__views.__alloyId146.add($.__views.__alloyId149);
+    $.__views.__alloyId150 = Ti.UI.createLabel({
         left: 0,
         width: 90,
         color: "#333",
@@ -176,9 +176,9 @@ function Controller() {
         },
         touchEnabled: false,
         text: "lastname",
-        id: "__alloyId128"
+        id: "__alloyId150"
     });
-    $.__views.__alloyId127.add($.__views.__alloyId128);
+    $.__views.__alloyId149.add($.__views.__alloyId150);
     $.__views.lastname = Ti.UI.createTextField({
         left: 100,
         width: 190,
@@ -194,18 +194,18 @@ function Controller() {
         },
         id: "lastname"
     });
-    $.__views.__alloyId127.add($.__views.lastname);
-    $.__views.__alloyId115 = Ti.UI.createTableView({
+    $.__views.__alloyId149.add($.__views.lastname);
+    $.__views.__alloyId137 = Ti.UI.createTableView({
         backgroundColor: "#fff",
         style: Ti.UI.iPhone.TableViewStyle.GROUPED,
-        data: __alloyId119,
-        id: "__alloyId115"
+        data: __alloyId141,
+        id: "__alloyId137"
     });
-    $.__views.container.add($.__views.__alloyId115);
-    $.__views.__alloyId117 = Ti.UI.createView({
+    $.__views.container.add($.__views.__alloyId137);
+    $.__views.__alloyId139 = Ti.UI.createView({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
-        id: "__alloyId117"
+        id: "__alloyId139"
     });
     $.__views.execute = Ti.UI.createButton({
         right: 10,
@@ -214,8 +214,8 @@ function Controller() {
         title: "update",
         id: "execute"
     });
-    $.__views.__alloyId117.add($.__views.execute);
-    $.__views.__alloyId115.headerView = $.__views.__alloyId117;
+    $.__views.__alloyId139.add($.__views.execute);
+    $.__views.__alloyId137.headerView = $.__views.__alloyId139;
     exports.destroy = function() {};
     _.extend($, $.__views);
     var users = Alloy.createModel("Users");
