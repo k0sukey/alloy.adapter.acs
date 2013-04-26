@@ -22,7 +22,7 @@ Using [ci.alloy.adapter.two](https://github.com/aaronksaunders/ci.alloy.adapter.
 | | query | - | - | - |
 | | show | - | - | - |
 | **Clients** | geolocate | - | - | - |
-| **CustomObjects** | create | [create.js](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/controllers/objects/create.js) | [create.xml](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/views/objects/create.xml) | [create.tss](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/styles/objects/create.tss) |
+| **[CustomObjects](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/models/objects.js)** | create | [create.js](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/controllers/objects/create.js) | [create.xml](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/views/objects/create.xml) | [create.tss](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/styles/objects/create.tss) |
 | | delete | - | - | - |
 | | query | [query.js](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/controllers/objects/query.js) | [query.xml](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/views/objects/query.xml) | [query.tss](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/styles/objects/query.tss) |
 | | show | [show.js](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/controllers/objects/show.js) | [show.xml](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/views/objects/show.xml) | [show.tss](https://github.com/k0sukey/alloy.adapter.acs/blob/master/app/styles/objects/show.tss) |
